@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box } from '@mui/system'
 import { Avatar, Button, Paper } from '@mui/material'
 import { useCookies } from 'react-cookie'
+import { useNavigate } from 'react-router-dom'
 // import BadgeImage from './images/sarpa_psychic.png'
 
 const GeneralBadge = ({cookieName, BadgeImage}) => {
   const [cookies, setCookie] = useCookies();
   const current = new Date();
   const nextYear = new Date();
+  const navigate = useNavigate();
   nextYear.setFullYear(current.getFullYear() + 1);
 
   return (
@@ -18,7 +20,10 @@ const GeneralBadge = ({cookieName, BadgeImage}) => {
         {/* <img src={BadgeImage} /> */}
         <img src={BadgeImage} style={{width: 200, height: 200, pb: 5}} />
       </Paper>
-      <Button onClick={() => setCookie(cookieName, true, {expires: nextYear})}
+      <Button onClick={() => {
+          setCookie(cookieName, true, {expires: nextYear});
+          navigate("/");
+        }}
         variant="contained"
         sx={{mt: 5}}
       >
