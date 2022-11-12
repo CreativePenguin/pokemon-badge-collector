@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Website Details
+
+It's like a scavenger hunt, qr codes in a pdf. Print out qr codes and scatter them. Scanning the qr codes will unlock badges which can be viewed here: https://creativepenguin.github.io/pokemon-badge-collector/
+
 ## Available Scripts
 
 In the project directory, you can run:
