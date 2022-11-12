@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pokemon-badge-collector/static/css/main.073c9b0a.css",
-    "main.js": "/pokemon-badge-collector/static/js/main.fc21dfc0.js",
+    "main.js": "/pokemon-badge-collector/static/js/main.b94d6a9e.js",
     "static/js/787.cdfc5206.chunk.js": "/pokemon-badge-collector/static/js/787.cdfc5206.chunk.js",
     "static/media/sarpa_dragon.png": "/pokemon-badge-collector/static/media/sarpa_dragon.47d0e66295799809275b.png",
     "static/media/sarpa_grass.png": "/pokemon-badge-collector/static/media/sarpa_grass.de123575b68bc22e7fb5.png",
@@ -14,11 +14,11 @@
     "static/media/sarpa_none.png": "/pokemon-badge-collector/static/media/sarpa_none.162ac39b5b338f0299ca.png",
     "index.html": "/pokemon-badge-collector/index.html",
     "main.073c9b0a.css.map": "/pokemon-badge-collector/static/css/main.073c9b0a.css.map",
-    "main.fc21dfc0.js.map": "/pokemon-badge-collector/static/js/main.fc21dfc0.js.map",
+    "main.b94d6a9e.js.map": "/pokemon-badge-collector/static/js/main.b94d6a9e.js.map",
     "787.cdfc5206.chunk.js.map": "/pokemon-badge-collector/static/js/787.cdfc5206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.fc21dfc0.js"
+    "static/js/main.b94d6a9e.js"
   ]
 }
