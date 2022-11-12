@@ -10,7 +10,7 @@ import GrassBadge from './images/sarpa_grass.png';
 import GroundBadge from './images/sarpa_ground.png';
 import PsychicBadge from './images/sarpa_psychic.png';
 import WaterBadge from './images/sarpa_water.png';
-import NoBadge from "./images/sarpa_none.png"
+import NoBadge from "./images/sarpa_none.png";
 
 const BadgeCase = () => {
   const [cookies, setCookie, getCookie] = useCookies();
@@ -18,23 +18,26 @@ const BadgeCase = () => {
   const badges = {psychicBadge: PsychicBadge, darkBadge: DarkBadge, dragonBadge: DragonBadge,
     fairyBadge: FairyBadge, ghostBadge: GhostBadge, grassBadge: GrassBadge, 
     groundBadge: GroundBadge, waterBadge: WaterBadge};
+  const badgeStyle = {width: 175, height: 175, pb: 5};
   return (
     <>
       <Typography variant="h4" align='center' sx={{mt: 1}}>Badge Case</Typography>
       <Grid container spacing={1} sx={{mt: 3}}>
-        {Object.keys(badges).map((badgename) => (
-          <Grid xs={6} md={3} sx={{display: "flex", justifyContent: "center"}}>
-          <img src={NoBadge} style={{width: 175, height: 175, pb: 5}} />
-            {/* {getCookie(badgename) ?
-              <img src={NoBadge} />
-            :
-              <img src={badges[badgename]} />
-            } */}
-          </Grid>
-        ))}
+        {Object.keys(badges).map((badgename) => {
+          return (
+            <Grid xs={6} md={3} sx={{display: "flex", justifyContent: "center"}}>
+              {cookies[badgename] ?
+                <img src={badges[badgename]} style={badgeStyle} />
+              :
+                <img src={NoBadge} style={badgeStyle} />}
+              {/* <img src={NoBadge} style={{width: 175, height: 175, pb: 5}} /> */}
+            </Grid>
+          )
+        })}
       </Grid>
     </>
   )
 }
+
 
 export default BadgeCase
